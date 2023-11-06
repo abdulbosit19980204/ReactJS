@@ -1,8 +1,8 @@
 import './movie-list-item.css'
-const MovieListItem = ()=>{
+const MovieListItem = (props)=>{
     return (
         <li className="list-group-item d-flex justify-content-between">
-            <span className="list-group-item-lable">Empire of Osman</span>
+            <span className="list-group-item-lable">{props.filmName}</span>
             <input type="number" className="list-group-item-input" defaultValue='989'/>
             <div className="d-flex justify-content-center align-items-center"> 
                 <button type="button" class="btn-cookie btn-sm">
