@@ -20,7 +20,7 @@ const companies = [
   {
     id: '2569ce0d517a7f06d3ea1f24',
     createdAt: '27/03/2019',
-    description: 'Dropbox is a file hosting service that offers cloud storage, file synchronization, a personal cloud.',
+    description: 'Meta Platforms, Inc., doing business as Meta, and formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns and operates Facebook, Instagram, Threads, and WhatsApp, among other products and services.',
     logo: '/assets/logos/Facebook_Logo_2023.png',
     title: 'Meta (Facebook)',
     downloads: '594' 
@@ -28,7 +28,7 @@ const companies = [
   {
     id: 'ed2b900870ceba72d203ec15',
     createdAt: '31/03/2019',
-    description: 'Medium is an online publishing platform developed by Evan Williams, and launched in August 2012.',
+    description: 'Instagram is an American photo and video sharing social networking service owned by Meta Platforms. It allows users to upload media that can be edited with filters, be organized by hashtags, and be associated with a location via geographical tagging. Posts can be shared publicly or with preapproved followers.',
     logo: '/assets/logos/Instagram_log.png',
     title: 'Instagram',
     downloads: '625'
@@ -36,7 +36,7 @@ const companies = [
   {
     id: 'a033e38768c82fca90df3db7',
     createdAt: '03/04/2019',
-    description: 'Slack is a cloud-based set of team collaboration tools and services, founded by Stewart Butterfield.',
+    description: 'Telegram Messenger, commonly known as Telegram, is an encrypted, cloud-based, cross-platform instant messaging service. It was originally launched for iOS on 14 August and Android in October 2013.',
     logo: '/assets/logos/Telegram_logo.svg.webp',
     title: 'Telegram',
     downloads: '857'
@@ -44,7 +44,7 @@ const companies = [
   {
     id: '1efecb2bf6a51def9869ab0f',
     createdAt: '04/04/2019',
-    description: 'Lyft is an on-demand transportation company based in San Francisco, California.',
+    description: 'TikTok, whose mainland Chinese counterpart is Douyin, is a short-form video hosting service owned by ByteDance. It hosts user-submitted videos, which can range in duration from 3 seconds to 10 minutes. Since their launches, TikTok and Douyin have gained global popularity. ',
     logo: '/assets/logos/tiktok-icon-free-png.webp',
     title: 'TikTok',
     downloads: '406'
@@ -52,7 +52,7 @@ const companies = [
   {
     id: '1ed68149f65fbc6089b5fd07',
     createdAt: '04/04/2019',
-    description: 'GitHub is a web-based hosting service for version control of code using Git.',
+    description: 'YouTube is an online video sharing and social media platform headquartered in San Bruno, California, United States. Accessible worldwide, it was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim. It is owned by Google and is the second most visited website in the world, after Google Search.',
     logo: '/assets/logos/youtube-logo-youtube-icon-transparent-free-png.webp',
     title: 'YouTube',
     downloads: '835'
@@ -60,15 +60,15 @@ const companies = [
   {
     id: '5dab321376eff6177407e887',
     createdAt: '04/04/2019',
-    description: 'Squarespace provides software as a service for website building and hosting. Headquartered in NYC.',
+    description: 'WhatsApp is a freeware, cross-platform, centralized instant messaging and voice-over-IP service owned by United States tech conglomerate Meta Platforms. It allows users to send text, voice messages and video messages, make voice and video calls, and share images, documents, user locations, and other content.',
     logo: '/assets/logos/whatsapp-logo-whatsapp-logo-transparent-whatsapp-icon-transparent-free-free-png.webp',
-    title: 'Whatsappe',
+    title: 'WhatsApp',
     downloads: '835'
   },
   {
     id: '5dab321376eff6177407e887',
     createdAt: '04/04/2019',
-    description: 'Squarespace provides software as a service for website building and hosting. Headquartered in NYC.',
+    description: 'Twitter, Inc. was an American social media company based in San Francisco, California. The company operated the social networking service Twitter and previously the Vine short video app and Periscope livestreaming service.',
     logo: '/assets/logos/twitter-logo-twitter-logo-transparent-twitter-icon-transparent-free-free-png.webp',
     title: 'Twitter',
     downloads: '835'

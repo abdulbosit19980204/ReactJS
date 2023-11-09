@@ -25,20 +25,20 @@ const Page = () => {
   const [method, setMethod] = useState('email');
   const formik = useFormik({
     initialValues: {
-      email: 'demo@devias.io',
+      email: 'example@gmail.com',
       password: 'Password123!',
       submit: null
     },
     validationSchema: Yup.object({
       email: Yup
         .string()
-        .email('Must be a valid email')
+        .email("Email to'g'ri kiritilishi kerak")
         .max(255)
-        .required('Email is required'),
+        .required("Emailni tekshiring"),
       password: Yup
         .string()
         .max(255)
-        .required('Password is required')
+        .required("Passwordni tekshiring")
     }),
     onSubmit: async (values, helpers) => {
       try {
@@ -71,7 +71,7 @@ const Page = () => {
     <>
       <Head>
         <title>
-          Login | Devias Kit
+          Login | MIA ear
         </title>
       </Head>
       <Box
@@ -99,7 +99,7 @@ const Page = () => {
               <Typography variant="h4">
                 Login
               </Typography>
-              <Typography
+              {/* <Typography
                 color="text.secondary"
                 variant="body2"
               >
@@ -113,7 +113,7 @@ const Page = () => {
                 >
                   Register
                 </Link>
-              </Typography>
+              </Typography> */}
             </Stack>
             <Tabs
               onChange={handleMethodChange}
@@ -193,7 +193,7 @@ const Page = () => {
                   sx={{ mt: 3 }}
                 >
                   <div>
-                    You can use <b>demo@devias.io</b> and password <b>Password123!</b>
+                    You can use <b>uzdev7@gmail.com</b> and password <b>uzdev7</b>
                   </div>
                 </Alert>
               </form>
