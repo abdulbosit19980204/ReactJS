@@ -7,6 +7,38 @@ import './app.css'
 
 
 const App = ()=>{
+
+    const data= [{
+        filmName:"A-Haunting We Will Go",
+        viewers:"2225",
+        favourite:true
+    },
+    {
+        filmName:"Osiyo ustida boʻron",
+        viewers:"8000",
+        favourite:true
+    },
+    {
+        filmName:"A-Haunting We Will Go",
+        viewers:"2225",
+        favourite:false
+    },
+    {
+        filmName:"A-Haunting We Will Go",
+        viewers:"2225",
+        favourite:true
+    },
+    {
+        filmName:"A-Haunting We Will Go",
+        viewers:"2225",
+        favourite:false
+    },
+    {
+        filmName:"A-Haunting We Will Go",
+        viewers:"2225",
+        favourite:true
+    }]
+
     return (
         <div className="app font-monospace">
             <div className="content">
@@ -15,7 +47,7 @@ const App = ()=>{
                     <SearchPanel/>
                     <AppFilter/>
                 </div>
-                <MovieList></MovieList>
+                <MovieList data={data}></MovieList>
                 <MoviesAddForm></MoviesAddForm>
             </div>
         </div>
