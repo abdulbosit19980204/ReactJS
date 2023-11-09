@@ -29,20 +29,23 @@ export const OverviewLatestOrders = (props) => {
 
   return (
     <Card sx={sx}>
-      <CardHeader title="Latest Orders" />
+      <CardHeader title="Yaqinda korilganlar" />
       <Scrollbar sx={{ flexGrow: 1 }}>
         <Box sx={{ minWidth: 800 }}>
           <Table>
             <TableHead>
               <TableRow>
                 <TableCell>
-                  Order
+                  Id
                 </TableCell>
                 <TableCell>
-                  Customer
+                  Image
+                </TableCell>
+                <TableCell>
+                  FIO
                 </TableCell>
                 <TableCell sortDirection="desc">
-                  Date
+                  Sana
                 </TableCell>
                 <TableCell>
                   Status
@@ -60,6 +63,9 @@ export const OverviewLatestOrders = (props) => {
                   >
                     <TableCell>
                       {order.ref}
+                    </TableCell>
+                    <TableCell>
+                      {order.customer.image}
                     </TableCell>
                     <TableCell>
                       {order.customer.name}
@@ -91,7 +97,7 @@ export const OverviewLatestOrders = (props) => {
           size="small"
           variant="text"
         >
-          View all
+          Barchasini ko'rish
         </Button>
       </CardActions>
     </Card>

@@ -22,7 +22,7 @@ export const OverviewLatestProducts = (props) => {
 
   return (
     <Card sx={sx}>
-      <CardHeader title="Latest Products" />
+      <CardHeader title="Oxirgi qidirilgan shaxslar" />
       <List>
         {products.map((product, index) => {
           const hasDivider = index < products.length - 1;
@@ -41,7 +41,7 @@ export const OverviewLatestProducts = (props) => {
                         component="img"
                         src={product.image}
                         sx={{
-                          borderRadius: 1,
+                          borderRadius: 3,
                           height: 48,
                           width: 48
                         }}
@@ -86,7 +86,7 @@ export const OverviewLatestProducts = (props) => {
           size="small"
           variant="text"
         >
-          View all
+          Barchasini ko'rish
         </Button>
       </CardActions>
     </Card>

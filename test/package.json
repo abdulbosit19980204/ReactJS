@@ -1,5 +1,5 @@
 {
-  "name": "material-kit-react",
+  "name": "iiv-secrets",
   "version": "3.0.0",
   "author": "Devias",
   "licence": "MIT",
@@ -43,5 +43,8 @@
     "@types/react-dom": "18.0.11",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6"
-  }
+  },
+  "description": "![license](https://img.shields.io/badge/license-MIT-blue.svg)",
+  "main": "next.config.js",
+  "license": "ISC"
 }
