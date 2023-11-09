@@ -37,32 +37,40 @@ const companies = [
     id: 'a033e38768c82fca90df3db7',
     createdAt: '03/04/2019',
     description: 'Slack is a cloud-based set of team collaboration tools and services, founded by Stewart Butterfield.',
-    logo: '/assets/logos/logo-slack.png',
-    title: 'Slack',
+    logo: '/assets/logos/Telegram_logo.svg.webp',
+    title: 'Telegram',
     downloads: '857'
   },
   {
     id: '1efecb2bf6a51def9869ab0f',
     createdAt: '04/04/2019',
     description: 'Lyft is an on-demand transportation company based in San Francisco, California.',
-    logo: '/assets/logos/logo-lyft.png',
-    title: 'Lyft',
+    logo: '/assets/logos/tiktok-icon-free-png.webp',
+    title: 'TikTok',
     downloads: '406'
   },
   {
     id: '1ed68149f65fbc6089b5fd07',
     createdAt: '04/04/2019',
     description: 'GitHub is a web-based hosting service for version control of code using Git.',
-    logo: '/assets/logos/logo-github.png',
-    title: 'GitHub',
+    logo: '/assets/logos/youtube-logo-youtube-icon-transparent-free-png.webp',
+    title: 'YouTube',
     downloads: '835'
   },
   {
     id: '5dab321376eff6177407e887',
     createdAt: '04/04/2019',
     description: 'Squarespace provides software as a service for website building and hosting. Headquartered in NYC.',
-    logo: '/assets/logos/logo-squarespace.png',
-    title: 'Squarespace',
+    logo: '/assets/logos/whatsapp-logo-whatsapp-logo-transparent-whatsapp-icon-transparent-free-free-png.webp',
+    title: 'Whatsappe',
+    downloads: '835'
+  },
+  {
+    id: '5dab321376eff6177407e887',
+    createdAt: '04/04/2019',
+    description: 'Squarespace provides software as a service for website building and hosting. Headquartered in NYC.',
+    logo: '/assets/logos/twitter-logo-twitter-logo-transparent-twitter-icon-transparent-free-free-png.webp',
+    title: 'Twitter',
     downloads: '835'
   }
 ];
