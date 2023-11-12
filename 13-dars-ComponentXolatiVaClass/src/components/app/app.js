@@ -3,6 +3,7 @@ import AppInfo from "../app-info/app-info"
 import SearchPanel from "../search-panel/search-panel"
 import MovieList from "../movie-list/movie-list"
 import MoviesAddForm from "../movies-add-form/movies-add-form"
+import Deletable from "../deletable/deletable"
 import './app.css'
 
 
@@ -55,6 +56,8 @@ const App = ()=>{
                 </div>
                 <MovieList data={data}></MovieList>
                 <MoviesAddForm></MoviesAddForm>
+                <Deletable props={data}></Deletable>
+                <Deletable props={data}></Deletable>
             </div>
         </div>
     )
