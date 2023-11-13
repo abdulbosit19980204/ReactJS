@@ -199,7 +199,7 @@ const Page = () => {
     <>
       <Head>
         <title>
-          Customers | MIA ear
+          People | MIA ear
         </title>
       </Head>
       <Box
