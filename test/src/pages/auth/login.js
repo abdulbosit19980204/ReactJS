@@ -159,7 +159,7 @@ const Page = () => {
                   />
                 </Stack>
                 <FormHelperText sx={{ mt: 1 }}>
-                  Optionally you can skip.
+                  Optionally you can use below the code.
                 </FormHelperText>
                 {formik.errors.submit && (
                   <Typography
@@ -179,14 +179,14 @@ const Page = () => {
                 >
                   Continue
                 </Button>
-                <Button
+                {/* <Button
                   fullWidth
                   size="large"
                   sx={{ mt: 3 }}
                   onClick={handleSkip}
                 >
                   Skip authentication
-                </Button>
+                </Button> */}
                 <Alert
                   color="primary"
                   severity="info"
@@ -204,10 +204,10 @@ const Page = () => {
                   sx={{ mb: 1 }}
                   variant="h6"
                 >
-                  Not available in the demo
+                  Bu qism ishlab chiqilmoqda
                 </Typography>
                 <Typography color="text.secondary">
-                  To prevent unnecessary costs we disabled this feature in the demo.
+                  Sinov rejimida bu qismdan foydalanilmaslik maqul deb xisoblandi.
                 </Typography>
               </div>
             )}

@@ -65,7 +65,32 @@ export const OverviewLatestOrders = (props) => {
                       {order.ref}
                     </TableCell>
                     <TableCell>
-                      {order.customer.image}
+                                 
+                {
+                  order.image
+                    ? (
+                      <Box
+                        component="img"
+                        src={order.image}
+                        sx={{
+                          borderRadius: 3,
+                          height: 48,
+                          width: 48
+                        }}
+                      />
+                    )
+                    : (
+                      <Box
+                        sx={{
+                          borderRadius: 1,
+                          backgroundColor: 'neutral.200',
+                          height: 48,
+                          width: 48
+                        }}
+                      />
+                    )
+                }
+             
                     </TableCell>
                     <TableCell>
                       {order.customer.name}
