@@ -17,12 +17,12 @@ const data = [
   {
     id: '5e887ac47eed253091be10cb',
     address: {
-      city: 'Cleveland',
-      country: 'USA',
-      state: 'Ohio',
+      city: 'Chilonzor-3',
+      country: 'Uzbekistan',
+      state: 'Tashkent',
       street: '2849 Fulton Street'
     },
-    avatar: '/assets/avatars/avatar-carson-darrin.png',
+    avatar: '/assets/user-img/user1.jpg',
     createdAt: subDays(subHours(now, 7), 1).getTime(),
     email: 'carson.darrin@devias.io',
     name: 'Carson Darrin',
@@ -36,7 +36,7 @@ const data = [
       state: 'Georgia',
       street: '1865  Pleasant Hill Road'
     },
-    avatar: '/assets/avatars/avatar-fran-perez.png',
+    avatar: '/assets/user-img/user3.jpg',
     createdAt: subDays(subHours(now, 1), 2).getTime(),
     email: 'fran.perez@devias.io',
     name: 'Fran Perez',
@@ -50,7 +50,7 @@ const data = [
       state: 'Ohio',
       street: '4894  Lakeland Park Drive'
     },
-    avatar: '/assets/avatars/avatar-jie-yan-song.png',
+    avatar: '/assets/user-img/user2.jpg',
     createdAt: subDays(subHours(now, 4), 2).getTime(),
     email: 'jie.yan.song@devias.io',
     name: 'Jie Yan Song',
@@ -64,7 +64,7 @@ const data = [
       name: 'Anika Visser',
       street: '4158  Hedge Street'
     },
-    avatar: '/assets/avatars/avatar-anika-visser.png',
+    avatar: '/assets/user-img/wuser4.jpg',
     createdAt: subDays(subHours(now, 11), 2).getTime(),
     email: 'anika.visser@devias.io',
     name: 'Anika Visser',
@@ -78,7 +78,7 @@ const data = [
       state: 'California',
       street: '75247'
     },
-    avatar: '/assets/avatars/avatar-miron-vitold.png',
+    avatar: '/assets/user-img/user5.jpg',
     createdAt: subDays(subHours(now, 7), 3).getTime(),
     email: 'miron.vitold@devias.io',
     name: 'Miron Vitold',
@@ -92,7 +92,7 @@ const data = [
       state: 'California',
       street: '317 Angus Road'
     },
-    avatar: '/assets/avatars/avatar-penjani-inyene.png',
+    avatar: '/assets/user-img/user6.jpg',
     createdAt: subDays(subHours(now, 5), 4).getTime(),
     email: 'penjani.inyene@devias.io',
     name: 'Penjani Inyene',
