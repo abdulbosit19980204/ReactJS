@@ -6,8 +6,8 @@ class MoviesAddForm extends Component {
     constructor(props){
         super(props)
        this.state= {
-        filmName:'',
-        viewers:''
+        filmName:'Uz: ',
+        viewers:'998'
         }
     }
 
@@ -20,12 +20,13 @@ this.setState({
 
 
     render(){
+        const {filmName, viewers} =this.state
         return(
             <div className='movies-add-form'>
                 <h3>Yangi kino qoshish</h3>
                 <form className='add-form d-flex'>
-                <input onChange={this.changeInputHandler} name='filmName' type="text" className="form-control new-post-lable" placeholder="Qanday kino?"/>
-                <input onChange={this.changeInputHandler} name='viewers' type="number" className="form-control new-post-lable" placeholder="Nechi marotaba korilgan?"/>
+                <input onChange={this.changeInputHandler} name='filmName' value={filmName} type="text" className="form-control new-post-lable" placeholder="Qanday kino?"/>
+                <input onChange={this.changeInputHandler} name='viewers' value={viewers} type="number" className="form-control new-post-lable" placeholder="Nechi marotaba korilgan?"/>
                 <button type='submit' className='btn btn-outline-dark'>
                     Qo'shish
                 </button>
