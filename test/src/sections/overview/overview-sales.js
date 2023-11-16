@@ -72,18 +72,18 @@ const useChartOptions = () => {
         show: true
       },
       categories: [
-        'Jan',
-        'Feb',
-        'Mar',
-        'Apr',
+        'Yanvar',
+        'Fevral',
+        'Mart',
+        'Aprel',
         'May',
-        'Jun',
-        'Jul',
-        'Aug',
-        'Sep',
-        'Oct',
-        'Nov',
-        'Dec'
+        'Iyun',
+        'Iyul',
+        'Avgust',
+        'Sentyabr',
+        'Oktyabr',
+        'Noyabr',
+        'Dekabr'
       ],
       labels: {
         offsetY: 5,
@@ -121,7 +121,7 @@ export const OverviewSales = (props) => {
               </SvgIcon>
             )}
           >
-            Sync
+            Yangilash
           </Button>
         )}
         title="Oylik statiska"
@@ -136,7 +136,7 @@ export const OverviewSales = (props) => {
         />
       </CardContent>
       <Divider />
-      <CardActions sx={{ justifyContent: 'flex-end' }}>
+      {/* <CardActions sx={{ justifyContent: 'flex-end' }}>
         <Button
           color="inherit"
           endIcon={(
@@ -148,7 +148,7 @@ export const OverviewSales = (props) => {
         >
           Overview
         </Button>
-      </CardActions>
+      </CardActions> */}
     </Card>
   );
 };
