@@ -8,7 +8,7 @@ class MovieListItem extends Component{
     }
 onFavourite=()=>{
 this.setState(({favourite}) => ({
-    favourite: !favourite
+    favourite: !favourite s
 }))
 }
 onLike=()=>{
