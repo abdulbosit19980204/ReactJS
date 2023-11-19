@@ -9,6 +9,7 @@ import { useSelection } from 'src/hooks/use-selection';
 import { Layout as DashboardLayout } from 'src/layouts/dashboard/layout';
 import { CustomersTable } from 'src/sections/customer/customers-table';
 import { CustomersSearch } from 'src/sections/customer/customers-search';
+import { CustomersAdd } from 'src/sections/customer/customers-add';
 import { applyPagination } from 'src/utils/apply-pagination';
 
 const now = new Date();
@@ -248,7 +249,7 @@ const Page = () => {
                 </Stack>
               </Stack>
               <div>
-                <Button
+                {/* <Button
                   startIcon={(
                     <SvgIcon fontSize="small">
                       <PlusIcon />
@@ -257,9 +258,10 @@ const Page = () => {
                   variant="contained"
                 >
                   Add
-                </Button>
+                </Button> */}
               </div>
             </Stack>
+            <CustomersAdd />
             <CustomersSearch />
             <CustomersTable
               count={data.length}

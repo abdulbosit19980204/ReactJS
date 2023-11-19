@@ -18,13 +18,21 @@ this.setState({
 })
 }
 
+addFormHandler = e =>{
+    e.preventDefault()
+    this.props.addForm({filmName: this.state.filmName, viewers: this.state.viewers})
+    this.setState({
+        filmName:'',
+        viewers:''
+    })
+}
 
     render(){
         const {filmName, viewers} =this.state
         return(
             <div className='movies-add-form'>
                 <h3>Yangi kino qoshish</h3>
-                <form className='add-form d-flex'>
+                <form className='add-form d-flex' onSubmit={this.addFormHandler}>
                 <input onChange={this.changeInputHandler} name='filmName' value={filmName} type="text" className="form-control new-post-lable" placeholder="Qanday kino?"/>
                 <input onChange={this.changeInputHandler} name='viewers' value={viewers} type="number" className="form-control new-post-lable" placeholder="Nechi marotaba korilgan?"/>
                 <button type='submit' className='btn btn-outline-dark'>
