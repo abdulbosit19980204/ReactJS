@@ -18,7 +18,7 @@ onLike=()=>{
 }
 
     render(){
-      const  {filmName,viewers} = this.props
+      const  {filmName,viewers, onDelete} = this.props
       const {favourite,like} = this.state
       return (
         <li className={`list-group-item d-flex justify-content-between ${favourite && "favourite"} ${like && "like"}`}>
@@ -29,8 +29,8 @@ onLike=()=>{
                 <button type="button" className="btn-cookie btn-sm" onClick={this.onFavourite}>
                     <i className="fas fa-cookie"></i>
                 </button>
-                <button type="button" className="btn-trash btn-sm">
-                    <i className="fas fa-trash"></i>
+                <button type="button" className="btn-trash btn-sm" >
+                    <i className="fas fa-trash" onClick={onDelete}></i>
                 </button>
                 <i className="fas fa-star"></i>
                 
