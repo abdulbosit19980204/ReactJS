@@ -12,7 +12,8 @@ import {
   TableHead,
   TablePagination,
   TableRow,
-  Typography
+  Typography,
+  TextField
 } from '@mui/material';
 import { Scrollbar } from 'src/components/scrollbar';
 import { getInitials } from 'src/utils/get-initials';
@@ -36,6 +37,7 @@ export const CustomersTable = (props) => {
   const selectedAll = (items.length > 0) && (selected.length === items.length);
 
   return (
+ 
     <Card>
       <Scrollbar>
         <Box sx={{ minWidth: 800 }}>
@@ -140,6 +142,7 @@ export const CustomersTable = (props) => {
     </Card>
   );
 };
+
 
 CustomersTable.propTypes = {
   count: PropTypes.number,

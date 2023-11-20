@@ -2,9 +2,10 @@ import MagnifyingGlassIcon from '@heroicons/react/24/solid/MagnifyingGlassIcon';
 import { Card, InputAdornment, OutlinedInput, SvgIcon } from '@mui/material';
 
 export const CustomersSearch = () => (
+  
   <Card sx={{ p: 2 }}>
     <OutlinedInput
-      defaultValue=""
+         defaultValue=""
       fullWidth
       placeholder="Search customer"
       startAdornment={(
@@ -17,7 +18,8 @@ export const CustomersSearch = () => (
           </SvgIcon>
         </InputAdornment>
       )}
-      sx={{ maxWidth: 500 }}
+      sx={{ maxWidth: 300 }}
     />
+   
   </Card>
 );
