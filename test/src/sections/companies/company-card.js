@@ -66,7 +66,7 @@ export const CompanyCard = (props) => {
             display="inline"
             variant="body2"
           >
-            Updated 2hr ago
+            Oxirgi yangilanish <strong>15:32</strong> 
           </Typography>
         </Stack>
         <Stack
@@ -85,7 +85,7 @@ export const CompanyCard = (props) => {
             display="inline"
             variant="body2"
           >
-            {company.downloads} Downloads
+            {company.downloads} Ma'lumotlar korilgan
           </Typography>
         </Stack>
       </Stack>

@@ -52,13 +52,13 @@ const states = [
 
 export const CustomersAdd = () => {
   const [values, setValues] = useState({
-    firstName: 'Abdulbosit',
-    lastName: 'Tuychiev',
-    email: 'uzdev7@gmail.com',
-    phone: '900066639',
-    state: 'los-angeles',
-    userName: '@abdulbosit_tatu',
-    telegramId:'1209619850'
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    state: '',
+    userName: '',
+    telegramId:''
   });
 
   const handleChange = useCallback(
@@ -85,14 +85,25 @@ export const CustomersAdd = () => {
         <CardContent sx={{ pt: 0 }}>
           <Box sx={{ m: -1 }}>
             <Grid container spacing={3}>
-              <Grid xs={12} md={6}>
+              <Grid xs={12} md={3}>
                 <TextField
                   fullWidth
-                  label="First name"
+                  label="Ism"
                   name="firstName"
                   onChange={handleChange}
                   required
-                  value={values.firstName +" "+ values.lastName}
+                  value={values.firstName}
+                  sx={{ m: 1.5, pr: 5 }}
+                />
+              </Grid>
+              <Grid xs={12} md={3}>
+                <TextField
+                  fullWidth
+                  label="Familya"
+                  name="lastName"
+                  onChange={handleChange}
+                  required
+                  value={values.lastName}
                   sx={{ m: 1.5, pr: 5 }}
                 />
               </Grid>
@@ -121,7 +132,7 @@ export const CustomersAdd = () => {
               <Grid xs={12} md={6}>
                 <TextField
                   fullWidth
-                  label="Phone Number"
+                  label="Telefon raqam"
                   name="phone"
                   onChange={handleChange}
                   type="number"
@@ -143,7 +154,7 @@ export const CustomersAdd = () => {
               <Grid xs={12} md={6}>
                 <TextField
                   fullWidth
-                  label="Select State"
+                  label="Manzil"
                   name="state"
                   onChange={handleChange}
                   required
@@ -165,7 +176,7 @@ export const CustomersAdd = () => {
         </CardContent>
         <Divider />
         <CardActions sx={{ justifyContent: 'flex-end' }}>
-          <Button variant="contained"> + Save details</Button>
+          <Button variant="contained"> + Qo'shish </Button>
         </CardActions>
       </form>
     </Card>

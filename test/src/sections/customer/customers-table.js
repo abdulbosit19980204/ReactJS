@@ -58,19 +58,22 @@ export const CustomersTable = (props) => {
                   />
                 </TableCell>
                 <TableCell>
-                  Name
+                  FIO
+                </TableCell>
+                <TableCell>
+                  User name
+                </TableCell>
+                <TableCell>
+                  Telefon
+                </TableCell>
+                <TableCell>
+                  Registratsiya vaqti
+                </TableCell>
+                <TableCell>
+                  Telegram id
                 </TableCell>
                 <TableCell>
                   Email
-                </TableCell>
-                <TableCell>
-                  Location
-                </TableCell>
-                <TableCell>
-                  Phone
-                </TableCell>
-                <TableCell>
-                  Signed Up
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -111,17 +114,24 @@ export const CustomersTable = (props) => {
                         </Typography>
                       </Stack>
                     </TableCell>
-                    <TableCell>
-                      {customer.email}
-                    </TableCell>
-                    <TableCell>
+                      <TableCell>
+                        @{customer.userName}
+                      </TableCell>
+                    {/* <TableCell>
                       {customer.address.city}, {customer.address.state}, {customer.address.country}
-                    </TableCell>
+                    </TableCell> */}
+                   
                     <TableCell>
                       {customer.phone}
                     </TableCell>
                     <TableCell>
                       {createdAt}
+                    </TableCell>
+                    <TableCell>
+                      {customer.id}
+                    </TableCell>
+                    <TableCell>
+                      {customer.email}
                     </TableCell>
                   </TableRow>
                 );

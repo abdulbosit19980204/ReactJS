@@ -98,7 +98,7 @@ const Page = () => (
           >
             <Stack spacing={1}>
               <Typography variant="h4">
-                Companies
+                Nazoratdagi tarmoqlar
               </Typography>
               <Stack
                 alignItems="center"
@@ -113,7 +113,7 @@ const Page = () => (
                     </SvgIcon>
                   )}
                 >
-                  Import
+                  Yuklab olish
                 </Button>
                 <Button
                   color="inherit"
@@ -123,7 +123,7 @@ const Page = () => (
                     </SvgIcon>
                   )}
                 >
-                  Export
+                  Dasturga yuklash
                 </Button>
               </Stack>
             </Stack>
