@@ -113,35 +113,29 @@ const Page = () => (
             <OverviewLatestProducts
               products={[
                 {
-                  id: '5ece2c077e39da27658aa8a9',
-                  image: '/assets/user-img/user1.jpg',
-                  name: 'Polonchiyev Pistonchi',
-                  updatedAt: subHours(now, 6).getTime()
+                  id: '1209619850',
+                  image: '/assets/user-img/abdulbosit.jpg',
+                  updatedAt: subDays(subHours(now, 7), 1).getTime(),
+                  email: 'uzdev7@gmail.com',
+                  name: 'Tuychiev Abdulbosit',
+                  phone: '+998(99)999-23-34',
+                  userName: "abdulbosit_tatu"
                 },
                 {
-                  id: '5ece2c0d16f70bff2cf86cd8',
-                  image: '/assets/user-img/user6.jpg',
-                  name: 'Polonchi Polonchi',
-                  updatedAt: subDays(subHours(now, 8), 2).getTime()
+                  id: '6455096428',
+                  address: {
+                    city: 'Atlanta',
+                    country: 'USA',
+                    state: 'Georgia',
+                    street: '1865  Pleasant Hill Road'
+                  },
+                  image: '/assets/user-img/sherzodbek.jpg',
+                  updatedAt: subDays(subHours(now, 1), 0).getTime(),
+                  email: '1qw3er5ty8@gmail.com',
+                  name: "Niymatov Sherzodbek",
+                  phone: '+998(99)101-56-69',
+                  userName: "niymatov97"
                 },
-                {
-                  id: 'b393ce1b09c1254c3a92c827',
-                  image: '/assets/user-img/user3.jpg',
-                  name: 'Kimdur Kim',
-                  updatedAt: subDays(subHours(now, 1), 1).getTime()
-                },
-                {
-                  id: 'a6ede15670da63f49f752c89',
-                  image: '/assets/user-img/wuser4.jpg',
-                  name: 'Qaysidir Qiz',
-                  updatedAt: subDays(subHours(now, 3), 3).getTime()
-                },
-                {
-                  id: 'bcad5524fe3a2f8f8620ceda',
-                  image: '/assets/user-img/user5.jpg',
-                  name: 'Kimsan Kimsanboyev',
-                  updatedAt: subDays(subHours(now, 5), 6).getTime()
-                }
               ]}
               sx={{ height: '100%' }}
             />

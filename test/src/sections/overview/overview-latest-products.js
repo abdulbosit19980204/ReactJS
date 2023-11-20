@@ -78,7 +78,7 @@ export const OverviewLatestProducts = (props) => {
       </List>
       <Divider />
       <CardActions sx={{ justifyContent: 'flex-end' }}>
-        <Button
+        {/* <Button
           color="inherit"
           endIcon={(
             <SvgIcon fontSize="small">
@@ -89,7 +89,7 @@ export const OverviewLatestProducts = (props) => {
           variant="text"
         >
           Barchasini ko'rish
-        </Button>
+        </Button> */}
       </CardActions>
     </Card>
   );
