@@ -1,4 +1,5 @@
 import MagnifyingGlassIcon from '@heroicons/react/24/solid/MagnifyingGlassIcon';
+import { Search } from '@mui/icons-material';
 import {
   Card,
   CardHeader,
@@ -11,11 +12,16 @@ import {
   Button,
   InputAdornment,
   OutlinedInput,
-  SvgIcon
+  SvgIcon,
+  Icon 
 } from '@mui/material';
 import { useCallback, useState } from 'react';
 
 const states = [
+  {
+    value: 'selectstate',
+    label: ''
+  },
   {
     value: 'tashkent',
     label: 'Toshkent'
@@ -176,6 +182,7 @@ export const CustomersAdd = () => {
         </CardContent>
         <Divider />
         <CardActions sx={{ justifyContent: 'flex-end' }}>
+          <Button variant="contained"><Search fontSize="small" /> Qidirish </Button>
           <Button variant="contained"> + Qo'shish </Button>
         </CardActions>
       </form>

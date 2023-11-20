@@ -38,7 +38,7 @@ const data = [
       state: 'Georgia',
       street: '1865  Pleasant Hill Road'
     },
-    avatar: '/assets/user-img/Sherzodbek.jpg',
+    avatar: '/assets/user-img/sherzodbek.jpg',
     createdAt: subDays(subHours(now, 1), 2).getTime(),
     email: '1qw3er5ty8@gmail.com',
     name: "Niymatov Sherzodbek",
