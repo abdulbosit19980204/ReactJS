@@ -6,6 +6,8 @@ import UserIcon from '@heroicons/react/24/solid/UserIcon';
 import UserPlusIcon from '@heroicons/react/24/solid/UserPlusIcon';
 import UsersIcon from '@heroicons/react/24/solid/UsersIcon';
 import XCircleIcon from '@heroicons/react/24/solid/XCircleIcon';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
+import LanIcon from '@mui/icons-material/Lan';
 import { SvgIcon } from '@mui/material';
 
 export const items = [
@@ -24,6 +26,15 @@ export const items = [
     icon: (
       <SvgIcon fontSize="small">
         <UsersIcon />
+      </SvgIcon>
+    )
+  },
+  {
+    title: 'Kontaktlar',
+    path: '/connections',
+    icon: (
+      <SvgIcon fontSize="small">
+       <LanIcon />
       </SvgIcon>
     )
   },
@@ -72,6 +83,7 @@ export const items = [
       </SvgIcon>
     )
   },
+  
   // {
   //   title: 'Error',
   //   path: '/404',

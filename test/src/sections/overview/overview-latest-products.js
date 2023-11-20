@@ -64,9 +64,10 @@ export const OverviewLatestProducts = (props) => {
               <ListItemText
                 primary={product.name}
                 primaryTypographyProps={{ variant: 'subtitle1' }}
-                secondary={`Yangilanish ${ago} avval`}
+                // secondary={`Yangilanish ${ago} avval`}
+                secondary={`${product.phone}  | |  @${product.userName} `}
                 secondaryTypographyProps={{ variant: 'body2' }}
-              />
+              /> 
               <IconButton edge="end">
                 <SvgIcon>
                   <EllipsisVerticalIcon />

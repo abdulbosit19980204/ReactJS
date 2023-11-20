@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import CurrencyDollarIcon from '@heroicons/react/24/solid/CurrencyDollarIcon';
 import { Avatar, Card, CardContent, Stack, SvgIcon, Typography } from '@mui/material';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 export const OverviewTotalProfit = (props) => {
   const { value, sx } = props;
@@ -32,8 +33,11 @@ export const OverviewTotalProfit = (props) => {
               width: 56
             }}
           >
-            <SvgIcon>
+            {/* <SvgIcon>
               <CurrencyDollarIcon />
+            </SvgIcon> */}
+            <SvgIcon>
+              <CheckCircleIcon />
             </SvgIcon>
           </Avatar>
         </Stack>

@@ -34,12 +34,12 @@ export const CompanyCard = (props) => {
         >
           {company.title}
         </Typography>
-        <Typography
+        {/* <Typography
           align="center"
           variant="body1"
         >
           {company.description}
-        </Typography>
+        </Typography> */}
       </CardContent>
       <Box sx={{ flexGrow: 1 }} />
       <Divider />
@@ -66,7 +66,7 @@ export const CompanyCard = (props) => {
             display="inline"
             variant="body2"
           >
-            Oxirgi yangilanish <strong>15:32</strong> 
+            Yangilanish <strong>15:32</strong> 
           </Typography>
         </Stack>
         <Stack
@@ -85,7 +85,7 @@ export const CompanyCard = (props) => {
             display="inline"
             variant="body2"
           >
-            {company.downloads} Ma'lumotlar korilgan
+            {company.downloads}  ma'lumot
           </Typography>
         </Stack>
       </Stack>
