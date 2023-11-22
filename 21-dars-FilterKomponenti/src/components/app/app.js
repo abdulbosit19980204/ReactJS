@@ -42,19 +42,19 @@ constructor(props){
         {
             id:4,
             filmName:"A-Haunting We Will Go4",
-            viewers:"2225",
+            viewers:"4225",
             favourite:false,
             like: false,
         },
         {
             id:5,
             filmName:"A-Haunting We Will Go5",
-            viewers:"2225",
+            viewers:"3225",
             favourite:true,
             like: false,
         }] , 
         term:'',
-        filter:'popular',
+        filter:'all',
     }
 
 }
@@ -105,12 +105,13 @@ filterHandler = (arr, filter)=>{
         case "popular":
             return arr.filter(c => c.like)
         case "mostViewers":
-            return arr.filter(c => c.viewers>7000)
+            return arr.filter(c => c.viewers>3000)
         default:
             return arr
             
     }
 }
+updateFilterHandler = filter =>this.setState({filter})
 updateTermHandler = (term)=>{this.setState({term})}
 
 render(){
@@ -124,7 +125,7 @@ render(){
                 <AppInfo allMoviesCount={allMoviesCount} favouriteMovieCount = {favouriteMovieCount}/>
                 <div className="search-panel">
                     <SearchPanel updateTermHandler={this.updateTermHandler}/>
-                    <AppFilter/>
+                    <AppFilter filter={filter} updateFilterHandler={this.updateFilterHandler}/>
                 </div>
                 <MovieList  onToggleProp={this.onToggleProp} data={visibleData} onDelete={this.onDelete}></MovieList>
                 <MoviesAddForm addForm={this.addForm}></MoviesAddForm>
