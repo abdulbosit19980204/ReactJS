@@ -1,6 +1,6 @@
 // Class components
 
-import {Component, Fragment} from "react";
+import {Component} from "react";
 import  "./deletable.css"
 
 class User extends Component{
@@ -35,7 +35,7 @@ changeHandler = (e) =>{
     console.log(this.props);
     const {age, counter} = this.state
    return(
-    <>
+    <div className="deletable">
       <h1>Limit: <span>{counter}</span></h1>
       <button onClick={this.incClickHandler} className="btn btn-outline-success mt-3 pt-1 pb-1 ps-3 pe-3
 pt-1 pb-1 ps-3 pe-3"><span className="fw-bold fs-1">+</span></button>
@@ -47,7 +47,7 @@ pt-1 pb-1 ps-3 pe-3"><span className="fw-bold fs-1">+</span></button>
         </span>
         <input type="text" className="form-control" onChange={this.changeHandler}/>
       </form>
-    </>
+    </div>
    )
   }  
 }
