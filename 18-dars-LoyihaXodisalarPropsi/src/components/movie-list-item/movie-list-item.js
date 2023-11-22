@@ -1,25 +1,9 @@
 import './movie-list-item.css'
-import {Component} from 'react'
 
-class MovieListItem extends Component{
-    constructor(props){
-        super(props)
-        this.state = {favourite: false, like:false}
-    }
-onFavourite=()=>{
-this.setState(({favourite}) => ({
-    favourite: !favourite 
-}))
-}
-onLike=()=>{
-    this.setState(({like})=>({
-        like:!like
-    }))
-}
 
-    render(){
-      const  {filmName,viewers, onDelete, onToggleProp, favourite, like} = this.props
-      return (
+const MovieListItem  = (props)=>{
+    const  {filmName,viewers, onDelete, onToggleProp, favourite, like} = props
+    return(
         <li className={`list-group-item d-flex justify-content-between ${favourite && "favourite"} ${like && "like"}`}>
         {/* // <li className={classNames}> */}
             <span onClick={onToggleProp} className="list-group-item-lable" data-toggle='like'>{filmName}</span>
@@ -37,8 +21,6 @@ onLike=()=>{
 
         </li>
     )
-    }
-
 }
 
 
