@@ -61,7 +61,7 @@ onDelete = (id)=>{
         // const index = data.findIndex(c=>c.id===id)
         // data.splice(index, 1)
         const newArr = data.filter(c=>c.id!==id)
-        console.log(newArr);
+        // console.log(newArr);
         return{
             data:newArr,
         }
@@ -92,10 +92,11 @@ this.setState(({data})=>({
 
 render(){
     const {data}=this.state
+    const allMoviesCount = data.length
     return ( 
         <div className="app font-monospace">
             <div className="content">
-                <AppInfo/>
+                <AppInfo allMoviesCount={allMoviesCount} />
                 <div className="search-panel">
                     <SearchPanel/>
                     <AppFilter/>
