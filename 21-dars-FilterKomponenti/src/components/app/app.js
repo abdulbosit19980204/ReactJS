@@ -23,7 +23,7 @@ constructor(props){
             filmName:"Osiyo ustida boʻron1",
             viewers:"8000",
             favourite:true,
-            like: false,
+            like: true,
         },
         {
             id:2,
@@ -54,6 +54,7 @@ constructor(props){
             like: false,
         }] , 
         term:'',
+        filter:'popular',
     }
 
 }
@@ -99,13 +100,24 @@ searchHandler = (arr, term)=>{
     return arr.filter(item=>item.filmName.toLowerCase().indexOf(term) > -1)
 }
 
+filterHandler = (arr, filter)=>{
+    switch (filter) {
+        case "popular":
+            return arr.filter(c => c.like)
+        case "mostViewers":
+            return arr.filter(c => c.viewers>7000)
+        default:
+            return arr
+            
+    }
+}
 updateTermHandler = (term)=>{this.setState({term})}
 
 render(){
-    const {data, term}=this.state
+    const {data, term, filter}=this.state
     const allMoviesCount = data.length
     const favouriteMovieCount = data.filter(c=>c.favourite).length 
-    const visibleData = this.searchHandler(data, term)
+    const visibleData =this.filterHandler(this.searchHandler(data, term), filter) 
     return ( 
         <div className="app font-monospace">
             <div className="content">
