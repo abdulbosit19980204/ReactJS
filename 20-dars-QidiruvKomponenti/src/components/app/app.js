@@ -53,9 +53,12 @@ constructor(props){
             favourite:true,
             like: false,
         }] , 
+        term:'',
     }
 
 }
+
+
 onDelete = (id)=>{
     this.setState(({data}) => {
         // const index = data.findIndex(c=>c.id===id)
@@ -89,21 +92,29 @@ this.setState(({data})=>({
 }))
 }
 
+searchHandler = (arr, term)=>{
+    if(term===0){
+        return arr
+    }
+    return arr.filter(item=>item.filmName.toLowerCase().indexOf(term) > -1)
+}
+
+updateTermHandler = (term)=>{this.setState({term})}
 
 render(){
-    const {data}=this.state
+    const {data, term}=this.state
     const allMoviesCount = data.length
     const favouriteMovieCount = data.filter(c=>c.favourite).length 
-
+    const visibleData = this.searchHandler(data, term)
     return ( 
         <div className="app font-monospace">
             <div className="content">
                 <AppInfo allMoviesCount={allMoviesCount} favouriteMovieCount = {favouriteMovieCount}/>
                 <div className="search-panel">
-                    <SearchPanel/>
+                    <SearchPanel updateTermHandler={this.updateTermHandler}/>
                     <AppFilter/>
                 </div>
-                <MovieList  onToggleProp={this.onToggleProp} data={data} onDelete={this.onDelete}></MovieList>
+                <MovieList  onToggleProp={this.onToggleProp} data={visibleData} onDelete={this.onDelete}></MovieList>
                 <MoviesAddForm addForm={this.addForm}></MoviesAddForm>
             </div>
         </div>

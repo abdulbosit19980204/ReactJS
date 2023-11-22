@@ -1,9 +1,22 @@
-import React from 'react'
+import {Component} from 'react'
 import './search-panel.css'
-const SearchPanel = () => {
+
+import './search-panel.css'
+class SearchPanel extends Component {
+  constructor(props){
+    super(props)
+    this.state={term:'',}
+  }
+  updateTermHandler= (e)=>{
+    const term = e.target.value.toLowerCase()
+    this.setState({term})
+    this.props.updateTermHandler(term)
+  }
+ render(){
   return (
-    <input type='text' className='form-control search-input' placeholder='Kinolari qidirish'/>
+    <input onChange={this.updateTermHandler} value={this.state.term} type='text' className='form-control search-input' placeholder='Kinolari qidirish'/>
   )
+ }
 }
 
 export default SearchPanel
