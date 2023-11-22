@@ -16,36 +16,42 @@ constructor(props){
             filmName:"A-Haunting We Will Go0",
             viewers:"2225",
             favourite:true,
+            like: false,
         },
         {
             id:1,
             filmName:"Osiyo ustida boʻron1",
             viewers:"8000",
-            favourite:true
+            favourite:true,
+            like: false,
         },
         {
             id:2,
             filmName:"A-Haunting We Will Go2",
             viewers:"2225",
-            favourite:false
+            favourite:false,
+            like: false,
         },
         {
             id:3,
             filmName:"A-Haunting We Will Go3",
             viewers:"2225",
-            favourite:true
+            favourite:true,
+            like: false,
         },
         {
             id:4,
             filmName:"A-Haunting We Will Go4",
             viewers:"2225",
-            favourite:false
+            favourite:false,
+            like: false,
         },
         {
             id:5,
             filmName:"A-Haunting We Will Go5",
             viewers:"2225",
-            favourite:true
+            favourite:true,
+            like: false,
         }] , 
     }
 
@@ -64,10 +70,36 @@ onDelete = (id)=>{
 }
 
 addForm = (item)=>{
+    const newItem = {filmName: item.filmName, viewers: item.viewers, id: uuidv4(), favourite: false, like: false, }
     this.setState(({data})=>({
-    data: [...data,{...item, id: uuidv4()}]
+    data: [...data,newItem]
 }))
 }
+
+onToggleFavourite = (id)=>{
+this.setState(({data})=>({
+    data:  data.map(item=> {
+        if (item.id === id) {
+            return{...item, favourite: !item.favourite}
+        }
+        return item
+
+    })
+}))
+}
+
+onToggleLike = (id)=>{
+    this.setState(({data})=>({
+        data:  data.map(item=> {
+            if (item.id === id) {
+                return{...item, like: !item.like}
+            }
+            return item
+    
+        })
+    }))
+}
+
 render(){
     const {data}=this.state
     return ( 
@@ -78,7 +110,7 @@ render(){
                     <SearchPanel/>
                     <AppFilter/>
                 </div>
-                <MovieList data={data} onDelete={this.onDelete}></MovieList>
+                <MovieList onToggleFavourite={this.onToggleFavourite} onToggleLike={this.onToggleLike} data={data} onDelete={this.onDelete}></MovieList>
                 <MoviesAddForm addForm={this.addForm}></MoviesAddForm>
             </div>
         </div>
