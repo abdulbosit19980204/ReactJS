@@ -76,11 +76,12 @@ addForm = (item)=>{
 }))
 }
 
-onToggleFavourite = (id)=>{
+onToggleProp = (id, prop)=>{
+    console.log(prop);
 this.setState(({data})=>({
     data:  data.map(item=> {
         if (item.id === id) {
-            return{...item, favourite: !item.favourite}
+            return{...item, [prop]: !item.prop}
         }
         return item
 
@@ -88,17 +89,6 @@ this.setState(({data})=>({
 }))
 }
 
-onToggleLike = (id)=>{
-    this.setState(({data})=>({
-        data:  data.map(item=> {
-            if (item.id === id) {
-                return{...item, like: !item.like}
-            }
-            return item
-    
-        })
-    }))
-}
 
 render(){
     const {data}=this.state
@@ -110,7 +100,7 @@ render(){
                     <SearchPanel/>
                     <AppFilter/>
                 </div>
-                <MovieList onToggleFavourite={this.onToggleFavourite} onToggleLike={this.onToggleLike} data={data} onDelete={this.onDelete}></MovieList>
+                <MovieList  onToggleProp={this.onToggleProp} data={data} onDelete={this.onDelete}></MovieList>
                 <MoviesAddForm addForm={this.addForm}></MoviesAddForm>
             </div>
         </div>
