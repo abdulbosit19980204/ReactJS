@@ -19,7 +19,7 @@ app.get('/user/:userId',cors(), async (req, res) => {
     );
 
     const user = response.data.result;
-
+      console.log(user);
     if (user) {
       res.json({
         success: true,
@@ -28,7 +28,15 @@ app.get('/user/:userId',cors(), async (req, res) => {
           firstName: user.first_name,
           lastName: user.last_name,
           username: user.username,
-          profilePicture: user.photo?.big_file_id,
+          profilePicture: user.photo?.small_file_id,
+          type: user.type,
+          active_usernames: user.active_usernames,
+          bio: user.bio,
+            small_file_id: user.photo.small_file_id,
+            small_file_unique_id: user.photo.small_file_unique_id,
+            big_file_id: user.photo.big_file_id,
+            big_file_unique_id: user.photo.big_file_unique_id,
+          
         },
       });
     } else {

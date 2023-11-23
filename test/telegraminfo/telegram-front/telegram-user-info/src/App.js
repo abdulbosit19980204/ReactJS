@@ -33,6 +33,13 @@ function App() {
           <p>First Name: {user.firstName}</p>
           <p>Last Name: {user.lastName}</p>
           <p>Username: {user.username}</p>
+          <p>Type: {user.type}</p>
+          <p>Active usernames: {user.active_usernames}</p>
+          <p>BIO: {user.bio}</p>
+          <p>photo small_file_id: {user.small_file_id}</p>
+          <p>photo small_file_unique_id: {user.big_file_unique_id}</p>
+          <p>photo big_file_id: {user.big_file_id}</p>
+          <p>photo big_file_unique_id: {user.small_file_id}</p>
           {user.profilePicture && (
             <img src={`https://api.telegram.org/file/bot${botToken}/${user.profilePicture}`} alt="Profile" />
           )}
