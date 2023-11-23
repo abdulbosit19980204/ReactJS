@@ -8,7 +8,8 @@ function App() {
 
   const handleGetUser = async () => {
     try {
-      const response = await axios.get(`http://localhost:3001/user/${userId}`);
+      // const response = await axios.get(`http://localhost:3001/user/${userId}`);
+      const response = await axios.get(`https://telegram-info-server.onrender.com/user/${userId}`);
       console.log('Response:', response.data); // Log the response
       setUser(response.data.user);
     } catch (error) {
@@ -16,7 +17,7 @@ function App() {
     }
   };
   return (
-    <div>
+    <div style={{margin: 50, padding: 50}}>
       <h1>Telegram User Info</h1>
       <div>
         <label>
