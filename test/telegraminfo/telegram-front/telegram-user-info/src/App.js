@@ -32,7 +32,7 @@ function App() {
           <p>ID: {user.id}</p>
           <p>First Name: {user.firstName}</p>
           <p>Last Name: {user.lastName}</p>
-          <p>Username: {user.username}</p>
+          <p>Username:  {user.username}</p>
           <p>Type: {user.type}</p>
           <p>Active usernames: {user.active_usernames}</p>
           <p>BIO: {user.bio}</p>
