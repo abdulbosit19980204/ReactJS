@@ -1,12 +1,11 @@
 import React from 'react'
-import './app-info.scss'
+import './app-info.css'
 
-const AppInfo = ({allMoviesCount, favouriteMovieCount}) => {
-  
+const AppInfo = () => {
   return (
     <div className='app-info'>
-      <p style={{fontSize: 50, fontWeight:800}}>Barcha kinolar soni: {allMoviesCount}</p>
-      <p className='fs-3 text-uppercase'>Sevimli kinolar soni: {favouriteMovieCount}</p>
+      <p className='fs-3 text-uppercase'>Barcha kinolar soni:</p>
+      <p className='fs-3 text-uppercase'>Ko'rilgan kinolar soni:</p>
 
     </div>
   )

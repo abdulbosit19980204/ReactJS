@@ -1,0 +1,1 @@
+// bu mavzuda faqat nazariy kirish qilingan
