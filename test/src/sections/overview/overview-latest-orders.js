@@ -19,9 +19,10 @@ import { Scrollbar } from 'src/components/scrollbar';
 import { SeverityPill } from 'src/components/severity-pill';
 
 const statusMap = {
-  pending: 'warning',
-  delivered: 'success',
-  refunded: 'error'
+  yangi: 'success',
+  jarayonda: 'warning',
+  yakunlangan: 'success',
+  bekorqilingan: 'error'
 };
 
 export const OverviewLatestOrders = (props) => {

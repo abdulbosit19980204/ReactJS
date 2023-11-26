@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import ComputerDesktopIcon from '@heroicons/react/24/solid/ComputerDesktopIcon';
-import DeviceTabletIcon from '@heroicons/react/24/solid/DeviceTabletIcon';
-import PhoneIcon from '@heroicons/react/24/solid/PhoneIcon';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import YoutubeIcon from '@mui/icons-material/YouTube';
 import {
   Box,
   Card,
@@ -22,9 +23,10 @@ const useChartOptions = (labels) => {
       background: 'transparent'
     },
     colors: [
-      theme.palette.primary.main,
-      theme.palette.success.main,
-      theme.palette.warning.main
+      theme.palette.primary.dark,
+      theme.palette.secondary.dark,
+      theme.palette.info.dark,
+      theme.palette.error.dark,
     ],
     dataLabels: {
       enabled: false
@@ -63,21 +65,27 @@ const useChartOptions = (labels) => {
 };
 
 const iconMap = {
-  Desktop: (
+  Telegram: (
     <SvgIcon>
-      <ComputerDesktopIcon />
+      <TelegramIcon />
     </SvgIcon>
   ),
-  Tablet: (
+  Instagram: (
     <SvgIcon>
-      <DeviceTabletIcon />
+      <InstagramIcon />
     </SvgIcon>
   ),
-  Phone: (
+  Facebook: (
     <SvgIcon>
-      <PhoneIcon />
+      <FacebookIcon />
     </SvgIcon>
-  )
+  ),
+  Youtube: (
+    <SvgIcon>
+      <YoutubeIcon />
+    </SvgIcon>
+  ),
+  
 };
 
 export const OverviewTraffic = (props) => {
@@ -86,7 +94,7 @@ export const OverviewTraffic = (props) => {
 
   return (
     <Card sx={sx}>
-      <CardHeader title="Foydalanilgan qurilmalar" />
+      <CardHeader title="Tarmoqlardan olingan ma'lumotlar" />
       <CardContent>
         <Chart
           height={300}
