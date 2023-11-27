@@ -23,10 +23,10 @@ const useChartOptions = (labels) => {
       background: 'transparent'
     },
     colors: [
-      theme.palette.primary.dark,
-      theme.palette.secondary.dark,
-      theme.palette.info.dark,
-      theme.palette.error.dark,
+      theme.palette.primary.main,
+      theme.palette.secondary.main,
+      theme.palette.info.main,
+      theme.palette.error.main,
     ],
     dataLabels: {
       enabled: false

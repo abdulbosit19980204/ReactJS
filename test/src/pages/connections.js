@@ -2,6 +2,7 @@ import Head from 'next/head';
 import ArrowUpOnSquareIcon from '@heroicons/react/24/solid/ArrowUpOnSquareIcon';
 import ArrowDownOnSquareIcon from '@heroicons/react/24/solid/ArrowDownOnSquareIcon';
 import PlusIcon from '@heroicons/react/24/solid/PlusIcon';
+import Graph from "react-graph-vis";
 import {
   Box,
   Button,
@@ -146,6 +147,12 @@ const Page = () => (
     </Box>
   </>
 );
+
+
+
+
+
+
 
 Page.getLayout = (page) => (
   <DashboardLayout>
