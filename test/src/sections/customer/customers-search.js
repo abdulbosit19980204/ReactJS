@@ -5,7 +5,7 @@ export const CustomersSearch = () => (
   
   <Card sx={{ p: 2 }}>
     <OutlinedInput
-         defaultValue=""
+      defaultValue=""
       fullWidth
       placeholder="Izlash"
       startAdornment={(

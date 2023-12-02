@@ -69,10 +69,12 @@ export const CustomersAdd = () => {
 
   const handleChange = useCallback(
     (event) => {
+      console.log(event);
       setValues((prevState) => ({
         ...prevState,
         [event.target.name]: event.target.value
       }));
+      console.log(event.target.value);
     },
     []
   );
