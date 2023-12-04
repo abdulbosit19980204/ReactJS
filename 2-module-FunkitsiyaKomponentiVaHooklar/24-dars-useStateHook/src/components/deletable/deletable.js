@@ -53,7 +53,19 @@ import  "./deletable.css"
 // }
 
 const User = ()=>{
+//   const [state, setState]=useState({
+//     counter:0,
+//     age: 21,
+//     isLogin: false
+//   })
+// console.log(state);
+//   const incClickHandler = ()=> {setState(prevState=>({...prevState, counter:prevState.counter+1 }))}
+//   const deccClickHandler = ()=> {setState(prevState=>({...prevState, counter:prevState.counter-1 }))}
+//   const resetClickHandler = () => {setState(prevState=>({...prevState, counter:0 }))}
+//   const changeHandler = (e)=> {setState(prevState=>({...prevState, age:parseInt(e.target.value)}))}
+//   const onToggleLogin = () => {setState(prevState=>({...prevState, isLogin:!prevState.isLogin}))}
   const [counter, setCount]  = useState(0)
+  const [isLogin, setIsLogin] =useState(false)
   const [age, setAge] = useState(21)
 
   const incClickHandler = ()=>{
@@ -70,9 +82,14 @@ const User = ()=>{
     setAge(parseInt(e.target.value))
   }
 
+  const onToggleLogin = ()=>{
+    setIsLogin(prevState=>!prevState)
+  }
+
   return(
     <div className="deletable">
     <h1>Limit: <span>{counter}</span></h1>
+    {/* <h1>Limit: <span>{state.counter}</span></h1> */}
     <button onClick={incClickHandler} className="btn btn-outline-success mt-3 pt-1 pb-1 ps-3 pe-3 pt-1 pb-1 ps-3 pe-3"><span className="fw-bold fs-1">+</span></button>
     <button onClick={deccClickHandler} className="btn btn-outline-success mx-2 mt-3 pt-1 pb-1 ps-3 pe-3"><span className="fw-bold fs-1">-</span></button>
     <button onClick={resetClickHandler} className="btn btn-outline-success mx-2 mt-3 pt-1 pb-1 ps-3 pe-3 "><span className="fw-bold fs-1">0</span></button>
@@ -80,9 +97,16 @@ const User = ()=>{
     <form className="form-control mt-3">
       <span>
   Nechta kino kordiz: {age}
+  {/* Nechta kino kordiz: {state.age} */}
       </span>
       <input type="text" className="form-control" onChange={changeHandler}/>
     </form>
+    {isLogin ? <p className="text-center mt-3">Login</p> : null}
+    {/* {state.isLogin ? <p className="text-center mt-3">Login</p> : null} */}
+      
+    <div className="deletable d-flex justify-content-center">
+      <button className="btn btn-outline-primary" onClick={onToggleLogin}>Sign in</button>
+    </div>
   </div>
   )
 }
