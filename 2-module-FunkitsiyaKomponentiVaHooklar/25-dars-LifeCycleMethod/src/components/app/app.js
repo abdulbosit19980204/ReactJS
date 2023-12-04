@@ -5,10 +5,14 @@ import MovieList from "../movie-list/movie-list"
 import MoviesAddForm from "../movies-add-form/movies-add-form"
 import Deletable from "../deletable/deletable"
 import './app.css'
+import { useState } from "react"
 
 
 const App = ()=>{
-
+const [isDisplay, setIsDisplay]=useState(false)
+const deleteDisplayHandler = ()=>{
+    setIsDisplay(!isDisplay)
+}
     const data= [{
         id:0,
         filmName:"A-Haunting We Will Go",
@@ -56,8 +60,12 @@ const App = ()=>{
                 </div>
                 <MovieList data={data}></MovieList>
                 <MoviesAddForm></MoviesAddForm>
-                <Deletable props={data}></Deletable>
-                <Deletable props={data}></Deletable>
+                <button className="btn btn-outline-dark " onClick={deleteDisplayHandler}>Show</button>
+                <input type="checkbox" name="" id="" onChange={deleteDisplayHandler} className="deletable" />
+                {isDisplay && (
+                    <Deletable props={data}></Deletable>
+                )}
+                {/* <Deletable props={data}></Deletable> */}
             </div>
         </div>
     )
