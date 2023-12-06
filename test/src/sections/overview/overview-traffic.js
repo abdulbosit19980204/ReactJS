@@ -67,22 +67,22 @@ const useChartOptions = (labels) => {
 const iconMap = {
   Telegram: (
     <SvgIcon>
-      <TelegramIcon />
+      <TelegramIcon  color='info'/>
     </SvgIcon>
   ),
   Instagram: (
     <SvgIcon>
-      <InstagramIcon />
+      <InstagramIcon color='secondary'/>
     </SvgIcon>
   ),
   Facebook: (
     <SvgIcon>
-      <FacebookIcon />
+      <FacebookIcon color='info'/>
     </SvgIcon>
   ),
   Youtube: (
     <SvgIcon>
-      <YoutubeIcon />
+      <YoutubeIcon color='error'/>
     </SvgIcon>
   ),
   

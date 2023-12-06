@@ -200,8 +200,8 @@ export const CustomersAdd = () => {
         </CardContent>
         <Divider />
         <CardActions sx={{ justifyContent: 'flex-end' }}>
-          <Button onClick={onSearchHandle} variant="contained"><Search fontSize="small"  /> Qidirish </Button>
-          <Button onClick={onAddHandle} variant="contained"> + Qo'shish </Button>
+          <Button onClick={onSearchHandle} variant="outlined" size='small'><Search fontSize="small"  /> Qidirish </Button>
+          <Button onClick={onAddHandle} variant="outlined" size='small'> + Qo'shish </Button>
         </CardActions>
       </form>
       <Stack sx={{ width: '100%' }} spacing={2}>
