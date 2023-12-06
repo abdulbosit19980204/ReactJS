@@ -1,5 +1,5 @@
 import MagnifyingGlassIcon from '@heroicons/react/24/solid/MagnifyingGlassIcon';
-import { Search } from '@mui/icons-material';
+import { Instagram, Search, Telegram, WhatsApp, YouTube } from '@mui/icons-material';
 import {
   Card,
   CardHeader,
@@ -16,7 +16,13 @@ import {
   Icon 
 } from '@mui/material';
 import { useCallback, useState } from 'react';
-
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
+import Stack from '@mui/material/Stack';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 const states = [
   {
     value: 'selectstate',
@@ -86,6 +92,15 @@ export const CustomersAdd = () => {
     []
   );
 
+  const onSearchHandle = ()=>{
+    console.log("Qidirish");
+  }
+  
+  const onAddHandle = ()=>{
+   
+    console.log("Qo'shish");
+   
+  }
   return (
     <Card sx={{ p: 2 }}>
       <form autoComplete="off" noValidate onSubmit={handleSubmit}>
@@ -184,10 +199,82 @@ export const CustomersAdd = () => {
         </CardContent>
         <Divider />
         <CardActions sx={{ justifyContent: 'flex-end' }}>
-          <Button variant="contained"><Search fontSize="small" /> Qidirish </Button>
-          <Button variant="contained"> + Qo'shish </Button>
+          <Button onClick={onSearchHandle} variant="contained"><Search fontSize="small"  /> Qidirish </Button>
+          <Button onClick={onAddHandle} variant="contained"> + Qo'shish </Button>
         </CardActions>
       </form>
+      <Stack sx={{ width: '100%' }} spacing={2}>
+      <Alert severity="primary">
+        <AlertTitle><YouTube fontSize="small" color='error' /> Youtube</AlertTitle>
+        This is an error alert — <strong>check it out!</strong>
+        <ul>
+          <li><a href="#">aa</a></li>
+          <li><a href="#">aa</a></li>
+          <li><a href="#">aa</a></li>
+          <li><a href="#">aa</a></li>
+          <li><a href="#">aa</a></li>
+        </ul>
+        <br />
+        <ButtonGroup variant="text" aria-label="text button group" size='small'>
+          <Button onClick={onAddHandle}><AddIcon /></Button>
+          <Button><RemoveIcon/></Button>
+          <Button><RemoveRedEyeIcon/></Button>
+        </ButtonGroup>
+      </Alert>
+      <Alert severity="primary">
+        <AlertTitle><Instagram fontSize="small" color='secondary' /> Instagram</AlertTitle>
+        This is a warning alert — <strong>check it out!</strong>
+        <ul>
+          <li><a href="#">aa</a></li>
+          <li><a href="#">aa</a></li>
+          <li><a href="#">aa</a></li>
+          <li><a href="#">aa</a></li>
+          <li><a href="#">aa</a></li>
+        </ul>
+        <br />
+        <ButtonGroup variant="text" aria-label="text button group" size='small'>
+          <Button onClick={onAddHandle}><AddIcon /></Button>
+          <Button><RemoveIcon/></Button>
+          <Button><RemoveRedEyeIcon/></Button>
+        </ButtonGroup>
+      </Alert>
+      <Alert severity="primary">
+        <AlertTitle><Telegram fontSize="small" color='info' /> Telegram</AlertTitle>
+        This is an info alert — <strong>check it out!</strong>
+       <ul>
+        <li><a href="#">aa</a></li>
+        <li><a href="#">aa</a></li>
+        <li><a href="#">aa</a></li>
+        <li><a href="#">aa</a></li>
+        <li><a href="#">aa</a></li>
+       </ul>
+       <br />
+        <ButtonGroup variant="text" aria-label="text button group" size='small'>
+          <Button onClick={onAddHandle}><AddIcon /></Button>
+          <Button><RemoveIcon/></Button>
+          <Button><RemoveRedEyeIcon/></Button>
+        </ButtonGroup>
+      </Alert>
+      <Alert severity="primary">
+        <AlertTitle><WhatsApp fontSize="small" color='success' /> WhatsApp</AlertTitle>
+        This is a success alert — <strong>check it out!</strong>
+       <ul>
+        <li><a href="#">aa</a></li>
+        <li><a href="#">aa</a></li>
+        <li><a href="#">aa</a></li>
+        <li><a href="#">aa</a></li>
+        <li><a href="#">aa</a></li>
+       </ul>
+       <br />
+        <ButtonGroup variant="text" aria-label="text button group"  size='small'>
+          <Button onClick={onAddHandle}><AddIcon /></Button>
+          <Button><RemoveIcon/></Button>
+          <Button><RemoveRedEyeIcon/></Button>
+        </ButtonGroup>
+      </Alert>
+    </Stack>
     </Card>
+
+    
   );
 };
