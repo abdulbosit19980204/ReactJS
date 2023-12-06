@@ -78,18 +78,26 @@ const companies = [
 
 const graph = {
   nodes: [
-    { id: 1, label: "Abdulbosit Tuychiev", title: "abdulbosit 1 tootip text" },
+    { id: 1, label: "Abdulbosit Tuychiev", title: "abdulbosit 1 tootip text", color: "#e04141" },
     { id: 2, label: "Xasanboy", title: "xasanboy 2 tootip text" },
     { id: 3, label: "Bobur", title: "bobur 3 tootip text" },
     { id: 4, label: "Sobir", title: "sobir 4 tootip text" },
-    { id: 5, label: "Shokir", title: "qobil 5 tootip text" }
+    { id: 5, label: "Shokir", title: "qobil 5 tootip text" },
+    { id: 6, label: "G'olib", title: "g'olib 5 tootip text" },
+    { id: 7, label: "Timur", title: "tolib 5 tootip text" },
+    { id: 8, label: "Javlon", title: "qobil 5 tootip text" },
+    
   ],
   edges: [
     { from: 1, to: 2 },
     { from: 1, to: 3 },
     { from: 2, to: 4 },
     { from: 2, to: 5 },
-    { from: 3, to: 2 }
+    { from: 6, to:  2},
+    { from: 8, to: 2 },
+    { from: 3, to: 7 },
+    { from: 7, to: 6 },
+    { from: 4, to: 1 },
   ]
 };
 
