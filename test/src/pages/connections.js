@@ -76,6 +76,39 @@ const companies = [
   }
 ];
 
+const graph = {
+  nodes: [
+    { id: 1, label: "Abdulbosit Tuychiev", title: "abdulbosit 1 tootip text" },
+    { id: 2, label: "Xasanboy", title: "xasanboy 2 tootip text" },
+    { id: 3, label: "Bobur", title: "bobur 3 tootip text" },
+    { id: 4, label: "Sobir", title: "sobir 4 tootip text" },
+    { id: 5, label: "Shokir", title: "qobil 5 tootip text" }
+  ],
+  edges: [
+    { from: 1, to: 2 },
+    { from: 1, to: 3 },
+    { from: 2, to: 4 },
+    { from: 2, to: 5 },
+    { from: 3, to: 2 }
+  ]
+};
+
+const options = {
+  layout: {
+    hierarchical: true
+  },
+  edges: {
+    color: "#000000"
+  },
+  height: "500px"
+};
+
+const events = {
+  select: function(event) {
+    var { nodes, edges } = event;
+  }
+};
+
 const Page = () => (
   <>
     <Head>
@@ -143,6 +176,16 @@ const Page = () => (
          
           </Box>
         </Stack>
+        
+        <Graph
+      graph={graph}
+      options={options}
+      events={events}
+      getNetwork={network => {
+        //  if you want access to vis.js network api you can set the state in a parent component using this property
+      }}
+    />
+
       </Container>
     </Box>
   </>
