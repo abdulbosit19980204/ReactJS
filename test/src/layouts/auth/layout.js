@@ -79,14 +79,19 @@ export const Layout = (props) => {
               }}
               variant="h1"
             >
-              Welcome to{' '}
+              
               <Box
                 component="a"
                 sx={{ color: '#15B79E' }}
                 target="_blank"
               >
-                MIA ear
+                E-SPY 
               </Box>
+              {' '} 
+              <Box>Dasturiy ta'minotiga</Box>
+               <Box>
+               Xush kelibsiz 
+               </Box>
             </Typography>
             <Typography
               align="center"

@@ -17,7 +17,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Overview | MIA ear
+        Bosh sahifa | MIA E-SPY
       </title>
     </Head>
     <Box

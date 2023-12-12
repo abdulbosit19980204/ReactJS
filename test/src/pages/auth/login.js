@@ -38,7 +38,7 @@ const Page = () => {
       password: Yup
         .string()
         .max(255)
-        .required("Passwordni tekshiring")
+        .required("Parolni tekshiring")
     }),
     onSubmit: async (values, helpers) => {
       try {
@@ -71,7 +71,7 @@ const Page = () => {
     <>
       <Head>
         <title>
-          Login | MIA ear
+          Kirish | MIA E-SPY
         </title>
       </Head>
       <Box
@@ -97,7 +97,7 @@ const Page = () => {
               sx={{ mb: 3 }}
             >
               <Typography variant="h4">
-                Login
+                Kirish
               </Typography>
               {/* <Typography
                 color="text.secondary"
@@ -125,7 +125,7 @@ const Page = () => {
                 value="email"
               />
               <Tab
-                label="Phone Number"
+                label="Telefon Raqam"
                 value="phoneNumber"
               />
             </Tabs>
@@ -150,7 +150,7 @@ const Page = () => {
                     error={!!(formik.touched.password && formik.errors.password)}
                     fullWidth
                     helperText={formik.touched.password && formik.errors.password}
-                    label="Password"
+                    label="Maxfiy so'z"
                     name="password"
                     onBlur={formik.handleBlur}
                     onChange={formik.handleChange}
@@ -159,7 +159,8 @@ const Page = () => {
                   />
                 </Stack>
                 <FormHelperText sx={{ mt: 1 }}>
-                  Optionally you can use below the code.
+                  {/* Optionally you can use below the code. */}
+                  Sizga ajratilgan maxfiy so'zni kiriting
                 </FormHelperText>
                 {formik.errors.submit && (
                   <Typography
@@ -177,7 +178,7 @@ const Page = () => {
                   type="submit"
                   variant="contained"
                 >
-                  Continue
+                  Davom etish
                 </Button>
                 {/* <Button
                   fullWidth
@@ -193,8 +194,11 @@ const Page = () => {
                   sx={{ mt: 3 }}
                 >
                   <div>
-                    You can use <b>uzdev7@gmail.com</b> and password <b>uzdev7</b>
+                    {/* You can use <b>uzdev7@gmail.com</b> and password <b>uzdev7</b> */}
+                    {/* You can use <b>uzdev7@gmail.com</b> and password <b>uzdev7</b> */}
+                    Royxatdan o'tish uchun <b> administratorga </b> murojaat qiling:
                   </div>
+                  <div ><b> (71)231-41-78</b></div>
                 </Alert>
               </form>
             )}
