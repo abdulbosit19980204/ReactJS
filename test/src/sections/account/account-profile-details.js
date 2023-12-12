@@ -10,7 +10,7 @@ import {
   TextField,
   Unstable_Grid2 as Grid
 } from '@mui/material';
-
+import UpdatePassword from './update-password';
 const states = [
   {
     value: 'tashkent',
@@ -172,9 +172,10 @@ export const AccountProfileDetails = () => {
           <Button  variant="outlined">
             Saqlash
           </Button>
-          <Button color='error' variant="outlined">
+          {/* <Button color='error' variant="outlined">
             Parolni o'zgartirish
-          </Button>
+          </Button> */}
+        <UpdatePassword/>
         </CardActions>
       </Card>
     </form>
