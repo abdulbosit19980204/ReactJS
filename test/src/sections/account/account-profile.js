@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 
 const user = {
-  avatar: '/assets/avatars/avatar-cao-yu.png',
+  avatar: '/assets/user-img/abdulbosit.jpg',
   city: 'Andijon Uzbekistan',
   country: 'Uz',
   jobTitle: 'Senior Developer',
@@ -62,7 +62,7 @@ export const AccountProfile = () => (
         fullWidth
         variant="text"
       >
-        Upload picture
+        Rasm Yuklash
       </Button>
     </CardActions>
   </Card>

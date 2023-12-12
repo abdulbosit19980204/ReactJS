@@ -65,7 +65,7 @@ export const AccountProfileDetails = () => {
     >
       <Card>
         <CardHeader
-          subheader="The information can be edited"
+          subheader="Shaxsiy ma'lumotlaringizni shu yerdan yangilang"
           title="Profile"
         />
         <CardContent sx={{ pt: 0 }}>
@@ -80,8 +80,8 @@ export const AccountProfileDetails = () => {
               >
                 <TextField
                   fullWidth
-                  helperText="Please specify the first name"
-                  label="First name"
+                  // helperText="Please specify the first name"
+                  label="Ism"
                   name="firstName"
                   onChange={handleChange}
                   required
@@ -94,7 +94,7 @@ export const AccountProfileDetails = () => {
               >
                 <TextField
                   fullWidth
-                  label="Last name"
+                  label="Familya"
                   name="lastName"
                   onChange={handleChange}
                   required
@@ -107,7 +107,7 @@ export const AccountProfileDetails = () => {
               >
                 <TextField
                   fullWidth
-                  label="Email Address"
+                  label="Email address"
                   name="email"
                   onChange={handleChange}
                   required
@@ -120,7 +120,7 @@ export const AccountProfileDetails = () => {
               >
                 <TextField
                   fullWidth
-                  label="Phone Number"
+                  label="Telefon raqam"
                   name="phone"
                   onChange={handleChange}
                   type="number"
@@ -133,7 +133,7 @@ export const AccountProfileDetails = () => {
               >
                 <TextField
                   fullWidth
-                  label="Country"
+                  label="Mamlakat"
                   name="country"
                   onChange={handleChange}
                   required
@@ -146,7 +146,7 @@ export const AccountProfileDetails = () => {
               >
                 <TextField
                   fullWidth
-                  label="Select State"
+                  label="Viloyat"
                   name="state"
                   onChange={handleChange}
                   required
@@ -169,8 +169,11 @@ export const AccountProfileDetails = () => {
         </CardContent>
         <Divider />
         <CardActions sx={{ justifyContent: 'flex-end' }}>
-          <Button variant="contained">
-            Save details
+          <Button  variant="outlined">
+            Saqlash
+          </Button>
+          <Button color='error' variant="outlined">
+            Parolni o'zgartirish
           </Button>
         </CardActions>
       </Card>

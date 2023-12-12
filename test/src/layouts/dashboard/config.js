@@ -48,7 +48,7 @@ export const items = [
     )
   },
   {
-    title: 'Account',
+    title: 'Shaxsiy kabinet',
     path: '/account',
     icon: (
       <SvgIcon fontSize="small">

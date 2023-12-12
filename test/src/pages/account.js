@@ -8,7 +8,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Account | MIA ear
+        Shaxsiy kabineet | E-SPY
       </title>
     </Head>
     <Box
@@ -22,7 +22,7 @@ const Page = () => (
         <Stack spacing={3}>
           <div>
             <Typography variant="h4">
-              Account
+              Shaxsiy kabineet
             </Typography>
           </div>
           <div>
