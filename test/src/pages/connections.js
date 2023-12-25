@@ -78,7 +78,7 @@ const companies = [
 
 const graph = {
   nodes: [
-    { id: 1, label: "Abdulbosit Tuychiev", title: "abdulbosit 1 tootip text", color: "#e04141" },
+    { id: 1, label: "Abdulbosit", title: "abdulbosit 1 tootip text", color: "#e1e1e1" },
     { id: 2, label: "Xasanboy", title: "xasanboy 2 tootip text" },
     { id: 3, label: "Bobur", title: "bobur 3 tootip text" },
     { id: 4, label: "Sobir", title: "sobir 4 tootip text" },
@@ -121,7 +121,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-       Aloqalar | MIA ear
+       Aloqalar | E-SPY
       </title>
     </Head>
     <Box
@@ -132,20 +132,20 @@ const Page = () => (
       }}
     >
       <Container maxWidth="xl">
-        <Stack spacing={3}>
+        <Stack spacing={1}>
           <Stack
-            direction="row"
-            justifyContent="space-between"
-            spacing={4}
+            // direction="row"
+            // justifyContent="space-between"
+            // spacing={4}
           >
-            <Stack spacing={1}>
-              <Typography variant="h4">
+            <Stack spacing={0}>
+              <Typography variant="h3">
                Kontaktlar
               </Typography>
               <Stack
                 alignItems="center"
                 direction="row"
-                spacing={1}
+                // spacing={1}
               >
                 <Button
                   color="inherit"

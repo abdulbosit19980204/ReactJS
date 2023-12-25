@@ -91,7 +91,7 @@ const Page = () => {
     <>
       <Head>
         <title>
-          People | MIA ear
+          Shaxslar | E-SPY
         </title>
       </Head>
       <Box

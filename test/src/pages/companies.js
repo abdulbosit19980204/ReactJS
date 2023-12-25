@@ -79,7 +79,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Listening pages | MIA ear
+        Tarmoqlar | E-SPY
       </title>
     </Head>
     <Box

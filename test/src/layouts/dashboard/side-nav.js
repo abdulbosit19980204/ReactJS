@@ -78,7 +78,7 @@ export const SideNav = (props) => {
                 color="neutral.400"
                 variant="body2"
               >
-                Qidirilgan ma'lumotlar
+                Online kuzatuv tizimi
               </Typography>
             </div>
             <SvgIcon

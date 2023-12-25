@@ -8,7 +8,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Settings | MIA ear
+        Sozlamalar | E-SPY
       </title>
     </Head>
     <Box

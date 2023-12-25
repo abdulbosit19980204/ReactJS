@@ -16,6 +16,7 @@ import {
 import { alpha } from '@mui/material/styles';
 import { usePopover } from 'src/hooks/use-popover';
 import { AccountPopover } from './account-popover';
+import { NotificationPopover } from './notification';
 
 const SIDE_NAV_WIDTH = 280;
 const TOP_NAV_HEIGHT = 64;
@@ -24,7 +25,7 @@ export const TopNav = (props) => {
   const { onNavOpen } = props;
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
   const accountPopover = usePopover();
-
+  const notificationPopover = usePopover()
   return (
     <>
       <Box
@@ -85,8 +86,10 @@ export const TopNav = (props) => {
                 </SvgIcon>
               </IconButton>
             </Tooltip>
-            <Tooltip title="Notifications">
-              <IconButton>
+            <Tooltip title="Yangilanishlar">
+              <IconButton 
+              onClick={notificationPopover.handleOpen}
+              ref={notificationPopover.anchorRef}>
                 <Badge
                   badgeContent={4}
                   color="success"
@@ -103,8 +106,8 @@ export const TopNav = (props) => {
               ref={accountPopover.anchorRef}
               sx={{
                 cursor: 'pointer',
-                height: 40,
-                width: 40
+                height: 30,
+                width: 30
               }}
               src="/assets/user-img/user.png"
             />
@@ -115,6 +118,11 @@ export const TopNav = (props) => {
         anchorEl={accountPopover.anchorRef.current}
         open={accountPopover.open}
         onClose={accountPopover.handleClose}
+      />
+      <NotificationPopover
+      anchorEl={notificationPopover.anchorRef.current}
+      open={notificationPopover.open}
+      onClose={notificationPopover.handleClose}
       />
     </>
   );

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Box, Divider, MenuItem, MenuList, Popover, Typography } from '@mui/material';
 import { useAuth } from 'src/hooks/use-auth';
 
-export const AccountPopover = (props) => {
+export const NotificationPopover = (props) => {
   const { anchorEl, onClose, open } = props;
   const router = useRouter();
   const auth = useAuth();
@@ -36,16 +36,12 @@ export const AccountPopover = (props) => {
         }}
       >
         <Typography variant="overline">
-          Account
+          Oxirgi yangilanishlar
         </Typography>
-        <Typography
-          color="text.secondary"
-          variant="body2"
-        >
-          Abdulbosit Tuychiev
-        </Typography>
+        <Divider />
+        <Divider />
+        
       </Box>
-      <Divider />
       <MenuList
         disablePadding
         dense
@@ -56,23 +52,26 @@ export const AccountPopover = (props) => {
           }
         }}
       >
-        <MenuItem>
-          Sozlash
-        </MenuItem>
-        <MenuItem>
-        Saqlanganlar
-        </MenuItem>
-        <Divider/>
-        <MenuItem onClick={handleSignOut}>
-          Chiqish
-        </MenuItem>
+       <Typography
+          color="text.secondary"
+          variant="body2"
+          sx={{
+            p: '8px',
+            '& > *': {
+              borderRadius: 1
+            }
+          }}
+        >
+         Yangilanishlar topilmadi
+        </Typography>
+       {/* <MenuItem>Yangi xabarlar yo'q </MenuItem> */}
         
       </MenuList>
     </Popover>
   );
 };
 
-AccountPopover.propTypes = {
+NotificationPopover.propTypes = {
   anchorEl: PropTypes.any,
   onClose: PropTypes.func,
   open: PropTypes.bool.isRequired
