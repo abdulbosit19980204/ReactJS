@@ -14,9 +14,8 @@ const incClickHandler = ()=>{
 const onToggle = ()=>{
     setActive(prevState=>!prevState)
   }
-const counterGenerate=useCallback(()=>{
-  return new Array(counter).fill("").map((_,idx)=>`Counter number: ${idx}`)
-  },[counter])
+const counterGenerate=useCallback((count)=>{
+  return new Array(counter).fill("").map((_,idx)=>`Counter number: ${idx+count}`)  },[counter])
 // console.log(counterGenerate());
  const colors = {
   fontWeight:"bold",
