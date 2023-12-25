@@ -5,6 +5,7 @@ const CounterItem=({counterGenerate})=>{
     useEffect(()=>{
         const newItem = counterGenerate()
         setItem(newItem)
+        console.log("Render");
     },[counterGenerate])
     return(
         <div> 

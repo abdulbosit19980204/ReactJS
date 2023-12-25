@@ -1,6 +1,6 @@
 // Class components
 
-import {useState} from "react";
+import {useState, useCallback} from "react";
 import  "./deletable.css"
 import CounterItem from "../counter-item/counter-item";
 
@@ -14,10 +14,10 @@ const incClickHandler = ()=>{
 const onToggle = ()=>{
     setActive(prevState=>!prevState)
   }
-const counterGenerate=()=>{
-return new Array(counter).fill("").map((_,idx)=>`Counter number: ${idx}`)
-}
-console.log(counterGenerate());
+const counterGenerate=useCallback(()=>{
+  return new Array(counter).fill("").map((_,idx)=>`Counter number: ${idx}`)
+  },[counter])
+// console.log(counterGenerate());
  const colors = {
   fontWeight:"bold",
   color: active ? "red":"gray"
